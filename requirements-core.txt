@@ -14,19 +14,17 @@ certifi==2024.8.30
     # via
     #   httpcore
     #   httpx
-cffi==1.17.1 ; platform_python_implementation != 'PyPy'
+cffi==1.17.1
     # via cryptography
 click==8.1.7
     # via uvicorn
-colorama==0.4.6 ; platform_system == 'Windows'
-    # via click
 croniter==3.0.3
     # via -r requirements-core.in
 cryptography==43.0.1
     # via joserfc
 fastapi-slim==0.115.0
     # via -r requirements-core.in
-gunicorn==23.0.0 ; sys_platform != 'win32'
+gunicorn==23.0.0 ; sys_platform != "win32"
     # via -r requirements-core.in
 h11==0.14.0
     # via
@@ -53,13 +51,11 @@ jinja2-fragments==1.6.0
     # via -r requirements-core.in
 joserfc==1.0.0
     # via -r requirements-core.in
-lxml==5.3.0 ; platform_system == 'Darwin'
-    # via appscript
 markupsafe==2.1.5
     # via jinja2
-packaging==24.1 ; sys_platform != 'win32'
+packaging==24.1
     # via gunicorn
-pycparser==2.22 ; platform_python_implementation != 'PyPy'
+pycparser==2.22
     # via cffi
 pydantic==2.9.2
     # via
@@ -75,7 +71,7 @@ python-dotenv==1.0.1
     # via pydantic-settings
 python-engineio==4.9.1
     # via python-socketio
-python-multipart==0.0.10
+python-multipart==0.0.18
     # via -r requirements-core.in
 python-socketio==5.11.4
     # via -r requirements-core.in
@@ -100,14 +96,9 @@ typing-extensions==4.12.2
     #   pydantic-core
 uvicorn==0.30.6
     # via -r requirements-core.in
-uvloop==0.20.0 ; sys_platform != 'win32'
+uvloop==0.20.0 ; sys_platform != "win32"
     # via -r requirements-core.in
 wsproto==1.2.0
     # via simple-websocket
 xlwings==0.33.0
     # via -r requirements-core.in
-
-# The following packages were excluded from the output:
-# pywin32
-# appscript
-# psutil
