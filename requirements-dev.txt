@@ -12,7 +12,7 @@ anyio==4.6.0
     #   httpx
     #   starlette
     #   watchfiles
-azure-functions==1.20.0 ; sys_platform != 'win32'
+azure-functions==1.20.0 ; sys_platform != "win32"
     # via -r requirements.txt
 beautifulsoup4==4.12.3
     # via -r requirements-dev.in
@@ -25,7 +25,7 @@ certifi==2024.8.30
     #   -r requirements.txt
     #   httpcore
     #   httpx
-cffi==1.17.1 ; platform_python_implementation != 'PyPy'
+cffi==1.17.1
     # via
     #   -r requirements.txt
     #   cryptography
@@ -35,11 +35,6 @@ click==8.1.7
     # via
     #   -r requirements.txt
     #   uvicorn
-colorama==0.4.6 ; sys_platform == 'win32' or platform_system == 'Windows'
-    # via
-    #   -r requirements.txt
-    #   click
-    #   pytest
 croniter==3.0.3
     # via -r requirements.txt
 cryptography==43.0.1
@@ -52,7 +47,7 @@ fastapi-slim==0.115.0
     # via -r requirements.txt
 filelock==3.16.1
     # via virtualenv
-gunicorn==23.0.0 ; sys_platform != 'win32'
+gunicorn==23.0.0 ; sys_platform != "win32"
     # via -r requirements.txt
 h11==0.14.0
     # via
@@ -87,10 +82,6 @@ jinja2-fragments==1.6.0
     # via -r requirements.txt
 joserfc==1.0.0
     # via -r requirements.txt
-lxml==5.3.0 ; platform_system == 'Darwin'
-    # via
-    #   -r requirements.txt
-    #   appscript
 markupsafe==2.1.5
     # via
     #   -r requirements.txt
@@ -114,7 +105,7 @@ pluggy==1.5.0
     # via pytest
 pre-commit==3.8.0
     # via -r requirements-dev.in
-pycparser==2.22 ; platform_python_implementation != 'PyPy'
+pycparser==2.22
     # via
     #   -r requirements.txt
     #   cffi
@@ -148,7 +139,7 @@ python-engineio==4.9.1
     # via
     #   -r requirements.txt
     #   python-socketio
-python-multipart==0.0.10
+python-multipart==0.0.18
     # via -r requirements.txt
 python-socketio==5.11.4
     # via -r requirements.txt
@@ -192,7 +183,7 @@ tzdata==2024.1
     #   pandas
 uvicorn==0.30.6
     # via -r requirements.txt
-uvloop==0.20.0 ; sys_platform != 'win32'
+uvloop==0.20.0 ; sys_platform != "win32"
     # via -r requirements.txt
 virtualenv==20.26.5
     # via pre-commit
@@ -204,8 +195,3 @@ wsproto==1.2.0
     #   simple-websocket
 xlwings==0.33.0
     # via -r requirements.txt
-
-# The following packages were excluded from the output:
-# pywin32
-# appscript
-# psutil
